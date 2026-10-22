@@ -1,0 +1,10 @@
+[Unit]
+Description=Change the e-paper photograph daily at 08:00 local time
+
+[Timer]
+OnCalendar=*-*-* 08:00:00
+Persistent=true
+Unit=epaper-frame.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=Update Waveshare PhotoPainter with the next folder photo
+After=local-fs.target time-sync.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/epaper-frame
+ExecStart=%h/epaper-frame/.venv/bin/python %h/epaper-frame/frame.py
+TimeoutStartSec=180

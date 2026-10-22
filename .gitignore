@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+.state/
+vendor/
+preview.png
+photos/*
+!photos/.gitkeep
